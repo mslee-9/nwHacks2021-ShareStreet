@@ -13,7 +13,7 @@ class CreateNewOffer extends React.Component {
         <div>
           <Tabs>
             <TabList>
-              <Tab>Create New Request</Tab>
+              <Tab>Create New Offer</Tab>
             </TabList>
             <TabPanel>
               <ItemInput />

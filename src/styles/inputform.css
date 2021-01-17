@@ -1,5 +1,9 @@
 .root {
-  padding: 30px;
+  margin: 30px;
+}
+.paper {
+  padding: 10px;
+  width: 400px;
 }
 
 .chooseFile {
@@ -7,12 +11,12 @@
   height: 10px;
 }
 
-post {
+.post {
   background: #ffc06e;
   align-self: right;
-  margin-top: 7px;
   border-radius: 0;
-  margin-bottom: 8px;
+  padding-top: 20px;
+  font-size: 10;
 }
 
 .description {
@@ -23,22 +27,25 @@ post {
   margin-right: 10px;
   margin-top: 5px;
   text-align: top;
+  padding: 10px;
 }
 
-quantity {
+.quantity {
   height: 40px;
   width: 400px;
   align-self: top;
   background: #fafafa;
   margin-right: 10px;
   margin-top: 5px;
+  padding: 10px;
 }
 
 .title {
   height: 40px;
   width: 400px;
   background: #fafafa;
-  margin-top: 10px;
+  margin-top: 5px;
+  padding: 10px;
 }
 
 .fileLabel {
