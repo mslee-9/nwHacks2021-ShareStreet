@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import ItemInput from "../components/ItemInput";
+import ItemInput from "../components/inputform";
 import logo from "../images/logo.png";
 import "../styles/newlisting.css";
 

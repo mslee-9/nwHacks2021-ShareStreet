@@ -1,14 +1,15 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 import TopBar from "../components/topbar";
 import MainTabs from "../components/maintabs";
 
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <Grid>
         <TopBar />
         <MainTabs />
-      </div>
+      </Grid>
     );
   }
 }

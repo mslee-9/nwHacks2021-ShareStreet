@@ -1,0 +1,54 @@
+.root {
+  padding: 30px;
+}
+
+.chooseFile {
+  margin-left: 30px;
+  height: 10px;
+}
+
+post {
+  background: #ffc06e;
+  align-self: right;
+  margin-top: 7px;
+  border-radius: 0;
+  margin-bottom: 8px;
+}
+
+.description {
+  height: 100px;
+  width: 400px;
+  align-self: top;
+  background: #fafafa;
+  margin-right: 10px;
+  margin-top: 5px;
+  text-align: top;
+}
+
+quantity {
+  height: 40px;
+  width: 400px;
+  align-self: top;
+  background: #fafafa;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.title {
+  height: 40px;
+  width: 400px;
+  background: #fafafa;
+  margin-top: 10px;
+}
+
+.fileLabel {
+  margin-left: 22px;
+  margin-top: 10px;
+  font-size: 13;
+  background: #fafafa;
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  padding: 50px;
+  color: grey;
+}
