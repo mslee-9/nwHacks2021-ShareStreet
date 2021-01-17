@@ -1,0 +1,22 @@
+.mainPanel {
+  background: #f0f0f0;
+  height: 1000px;
+}
+
+.logo {
+  top: 12;
+  left: 30;
+}
+
+.main {
+  margin-top: 80px;
+}
+
+.homeButton {
+  position: absolute;
+  right: 50px;
+  top: 18px;
+  color: black;
+  border: 2px solid orange;
+  background: #f7f7f7;
+}
