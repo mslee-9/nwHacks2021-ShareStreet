@@ -1,7 +1,6 @@
 import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 import { Grid, Button } from "@material-ui/core";
-import { BrowserRouter as NavLink } from "react-router-dom";
 import {
   InboxOutlined,
   MessageOutlined,
@@ -34,16 +33,12 @@ class TopBar extends React.Component {
           </IconButton>
         </Grid>
         <Grid className="mainButtons">
-          <NavLink to="/offerform" style={{ textDecoration: "none" }}>
-            <Button className="offerButton" variant="outlined">
-              Offer
-            </Button>
-          </NavLink>
-          <NavLink to="/requestform" style={{ textDecoration: "none" }}>
-            <Button className="requestButton" variant="outlined">
-              Receive
-            </Button>
-          </NavLink>
+          <Button className="offerButton" variant="outlined">
+            Offer
+          </Button>
+          <Button variant="outlined" onClick={this.newRequest}>
+            Receive
+          </Button>
         </Grid>
       </Grid>
     );

@@ -1,15 +1,27 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { NavLink } from "react-router-dom";
-import { Button } from "@material-ui/core";
+import TopBarListing from "../components/topbarnewlisting";
 import ItemInput from "../components/inputform";
-import logo from "../images/logo.png";
 import "../styles/newlisting.css";
 
 class CreateNewOffer extends React.Component {
   render() {
-    return <h1>new offer</h1>;
+    return (
+      <div>
+        <TopBarListing />
+        <div>
+          <Tabs>
+            <TabList>
+              <Tab>Create New Request</Tab>
+            </TabList>
+            <TabPanel>
+              <ItemInput />
+            </TabPanel>
+          </Tabs>
+        </div>
+      </div>
+    );
   }
 }
 
