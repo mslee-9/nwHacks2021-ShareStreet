@@ -1,11 +1,20 @@
 import React from "react";
-import "../styles/login.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import splashImage from "../images/sharestreet.jpg";
 import { Grid, Button, TextField } from "@material-ui/core";
+import "../styles/login.css";
 
 class login extends React.Component {
+  constuctor() {
+    this.routeChange = this.routeChange.bind(this);
+  }
+
+  routeChange = () => {
+    let path = "/home";
+    this.props.history.push(path);
+  };
+
   render() {
     return (
       <Grid container className="fullWidth">
@@ -46,7 +55,12 @@ class login extends React.Component {
                     variant="outlined"
                     placeholder="Password"
                   />
-                  <Button variant="outlined" fullWidth className="loginButton">
+                  <Button
+                    variant="outlined"
+                    fullWidth
+                    className="loginButton"
+                    onClick={this.routeChange}
+                  >
                     Sign Up
                   </Button>
                 </Grid>
@@ -65,7 +79,12 @@ class login extends React.Component {
                     variant="outlined"
                     placeholder="Password"
                   />
-                  <Button fullWidth className="loginButton" variant="outlined">
+                  <Button
+                    fullWidth
+                    className="loginButton"
+                    variant="outlined"
+                    onClick={this.routeChange}
+                  >
                     Log In
                   </Button>
                 </Grid>
