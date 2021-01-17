@@ -1,7 +1,6 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 import { Paper } from "@material-ui/core";
-import "../styles/myitems.css";
+import "../styles/listings.css";
 
 class MyItems extends React.Component {
   constructor() {
@@ -30,7 +29,7 @@ class MyItems extends React.Component {
         style={{
           border: 0,
           background: "orange",
-          height: 1,
+          height: 1.5,
           borderStyle: "inset",
         }}
       />
@@ -39,12 +38,20 @@ class MyItems extends React.Component {
     return (
       <div>
         {this.state.myListings.map((myitem, i) => (
-          <Paper key={i}>
-            Request or Offer
+          <Paper key={i} className="paper">
+            <p>{myitem.type}</p>
             <ColoredLine />
-            <p>{myitem.item}</p>
-            <p>{myitem.description}</p>
-            <p>{myitem.quantity}</p>
+            <div className="div">
+              <div className="first">
+                <p>Item: {myitem.item}</p>
+                <p>Description: {myitem.description}</p>
+                <p>Quantity: {myitem.quantity}</p>
+              </div>
+              <div className="second">
+                <button className="button">Edit</button>
+                <button className="button">Delete</button>
+              </div>
+            </div>
           </Paper>
         ))}
       </div>

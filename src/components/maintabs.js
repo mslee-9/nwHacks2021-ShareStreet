@@ -3,7 +3,6 @@ import { Input, Button } from "@material-ui/core";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../styles/maintabs.css";
 import "react-tabs/style/react-tabs.css";
-import Grid from "@material-ui/core/Grid";
 import Offers from "./offers";
 import Requests from "./requests";
 import MyItems from "./myitems";
@@ -17,14 +16,13 @@ class MainTabs extends React.Component {
           <Tab>Requests</Tab>
           <Tab style={{ float: "right" }}>My Dashboard</Tab>
         </TabList>
-
-        <TabPanel>
+        <TabPanel className="background">
           <Offers />
         </TabPanel>
-        <TabPanel>
+        <TabPanel className="background">
           <Requests />
         </TabPanel>
-        <TabPanel>
+        <TabPanel className="background">
           <MyItems />
         </TabPanel>
       </Tabs>

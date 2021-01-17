@@ -1,0 +1,38 @@
+.root {
+  justify-items: center;
+}
+.paper {
+  padding: 10px;
+  margin: auto;
+  margin-top: 6px;
+  min-width: 670px;
+  min-height: 170px;
+}
+
+.div {
+  width: 100%;
+}
+
+.first {
+  width: 60%;
+  float: left;
+}
+
+.second {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.request {
+  width: 100;
+  height: 30;
+}
+
+.button {
+  margin-top: 5px;
+  border-radius: 2px;
+  background: #f0f0f0;
+  border-color: #e9e9e9;
+}
