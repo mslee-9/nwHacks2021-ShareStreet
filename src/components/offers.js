@@ -23,14 +23,17 @@ class Offers extends React.Component {
   }
 
   render() {
-    const listOffers = this.state.offerListings.map((offer, i) => (
-      <Paper key={i}>
-        <p>{offer.organization}</p>
-        <p>{offer.item}</p>
-        <p>{offer.quantity}</p>
-      </Paper>
-    ));
-    return <div>{listOffers}</div>;
+    return (
+      <div>
+        {this.state.offerListings.map((offer, i) => (
+          <Paper key={i}>
+            <p>{offer.organization}</p>
+            <p>{offer.item}</p>
+            <p>{offer.quantity}</p>
+          </Paper>
+        ))}
+      </div>
+    );
   }
 }
 
