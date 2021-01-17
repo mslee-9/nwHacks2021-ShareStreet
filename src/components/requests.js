@@ -23,14 +23,17 @@ class Requests extends React.Component {
   }
 
   render() {
-    const listRequests = this.state.requestListings.map((request, i) => (
-      <Paper key={i}>
-        <p>{request.organization}</p>
-        <p>{request.item}</p>
-        <p>{request.quantity}</p>
-      </Paper>
-    ));
-    return <div>{listRequests}</div>;
+    return (
+      <div>
+        {this.state.requestListings.map((request, i) => (
+          <Paper key={i}>
+            <p>{request.organization}</p>
+            <p>{request.item}</p>
+            <p>{request.quantity}</p>
+          </Paper>
+        ))}
+      </div>
+    );
   }
 }
 
