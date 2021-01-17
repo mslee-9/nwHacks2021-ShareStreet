@@ -1,5 +1,6 @@
 .main {
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -14,11 +15,4 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 7px;
-}
-
-.offerButton {
-  padding: 30px;
-  color: orange;
-  background: orange;
-  background-color: orange;
 }
