@@ -4,7 +4,7 @@
 
 Share Street is a web app facilitating the sharing of resources between organizations by making it fast and easy to post requests and offers of items for their community and networks to view and fulfill.
 
-This project was initially built as hackathon submission for nwHacks 2021. It was later edited to add additional functionalities primarily as a front-end web application.
+This project was initially built as a hackathon submission for nwHacks 2021 by the team members below. It was later edited to add additional functionalities.
 
 Contributors:
 
