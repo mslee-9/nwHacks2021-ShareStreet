@@ -1,10 +1,11 @@
 import React from "react";
+import TopBar from "../components/topbar";
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>Home</h1>
+        <TopBar />
       </div>
     );
   }
