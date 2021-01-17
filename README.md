@@ -4,11 +4,11 @@
 
 Share Street is a web app facilitating the sharing of resources between organizations by making it fast and easy to post requests and offers of items for their community and networks to view and fulfill.
 
-This project was initially built as a hackathon submission for nwHacks 2021 by the team members below. It was later edited to add additional functionalities.
+This project was initially built as a hackathon submission for nwHacks 2021 by the team members below with backend server and infrastructure. I have edited the project to add additional functionalities and for it to function primarily as a front-end web application with local data storage.
 
 Contributors:
 
-- Developers: Sina Jamshidi, Frank Liu, Sol Lee
+- Developers: Sol Lee, Sina Jamshidi, Frank Liu
 - Designer: Olivia On
 
 # Getting Started with Create React App
