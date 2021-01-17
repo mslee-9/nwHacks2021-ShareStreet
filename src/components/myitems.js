@@ -36,17 +36,19 @@ class MyItems extends React.Component {
       />
     );
 
-    const myItems = this.state.myListings.map((myitem, i) => (
-      <Paper key={i}>
-        Request or Offer
-        <ColoredLine />
-        <p>{myitem.item}</p>
-        <p>{myitem.description}</p>
-        <p>{myitem.quantity}</p>
-      </Paper>
-    ));
-
-    return <div>{myItems}</div>;
+    return (
+      <div>
+        {this.state.myListings.map((myitem, i) => (
+          <Paper key={i}>
+            Request or Offer
+            <ColoredLine />
+            <p>{myitem.item}</p>
+            <p>{myitem.description}</p>
+            <p>{myitem.quantity}</p>
+          </Paper>
+        ))}
+      </div>
+    );
   }
 }
 
