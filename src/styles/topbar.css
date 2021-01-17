@@ -1,0 +1,33 @@
+.offerButton {
+  color: black;
+  border: 2px solid orange;
+  background: #f7f7f7;
+}
+
+.main {
+  margin-top: "80px";
+}
+
+.requestButton {
+  color: "black";
+  border: "2px solid orange";
+  background: "#f7f7f7";
+}
+
+.logo {
+  position: "absolute";
+  top: 12;
+  left: 30;
+}
+
+.iconButtons {
+  position: "absolute";
+  top: 15;
+  right: 230;
+}
+
+.mainButtons {
+  position: "absolute";
+  top: 20;
+  right: 50;
+}
