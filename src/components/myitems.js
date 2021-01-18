@@ -48,8 +48,8 @@ class MyItems extends React.Component {
                 <p>Quantity: {myitem.quantity}</p>
               </div>
               <div className="second">
-                <button className="button">Edit</button>
-                <button className="button">Delete</button>
+                <button className="editDeleteButton">Edit</button>
+                <button className="editDeleteButton">Delete</button>
               </div>
             </div>
           </Paper>

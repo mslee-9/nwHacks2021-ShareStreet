@@ -1,25 +1,52 @@
 .main {
   padding-top: 20px;
   margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 200px;
 }
 
 .logo {
   margin-left: 30px;
+  width: 70%;
 }
 
 .iconButtons {
-  position: fixed;
-  right: 230px;
+  justify-self: right;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 .mainButtons {
-  position: fixed;
-  right: 30px;
-  top: 25px;
+  justify-self: right;
+  margin-right: 30px;
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.button {
+  height: 37px;
+  width: 76px;
+  border-color: orange;
+  background-color: #f7f7f7;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #ecebeb;
+}
+
+.offerButton {
+  margin-right: 5px;
 }
 
 .backButton {
-  position: fixed;
   right: 30px;
   top: 25px;
 }
