@@ -29,15 +29,6 @@ class Offers extends React.Component {
           <ItemDisplay item={offer} key={i} />
         ))}
       </div>
-      // <div>
-      //   {this.state.offerListings.map((offer, i) => (
-      //     <Paper key={i}>
-      //       <p>{offer.organization}</p>
-      //       <p>{offer.item}</p>
-      //       <p>{offer.quantity}</p>
-      //     </Paper>
-      //   ))}
-      // </div>
     );
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import "../styles/listings.css";
-import { CenterFocusStrong } from "@material-ui/icons";
 
 class MyItems extends React.Component {
   constructor() {
