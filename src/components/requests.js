@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper } from "@material-ui/core/";
+import ItemDisplay from "./itemdisplay";
 
 class Requests extends React.Component {
   constructor() {
@@ -26,11 +26,7 @@ class Requests extends React.Component {
     return (
       <div>
         {this.state.requestListings.map((request, i) => (
-          <Paper key={i}>
-            <p>{request.organization}</p>
-            <p>{request.item}</p>
-            <p>{request.quantity}</p>
-          </Paper>
+          <ItemDisplay item={request} key={i} />
         ))}
       </div>
     );

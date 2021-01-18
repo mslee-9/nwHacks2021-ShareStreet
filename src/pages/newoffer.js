@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css";
 import TopBarListing from "../components/topbarnewlisting";
 import ItemInput from "../components/inputform";
 import "../styles/newlisting.css";
+import "../styles/maintabs.css";
 
 class CreateNewOffer extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class CreateNewOffer extends React.Component {
             <TabList>
               <Tab>Create New Offer</Tab>
             </TabList>
-            <TabPanel>
+            <TabPanel className="background">
               <ItemInput />
             </TabPanel>
           </Tabs>

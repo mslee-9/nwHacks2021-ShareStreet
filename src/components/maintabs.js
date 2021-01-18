@@ -1,5 +1,4 @@
 import React from "react";
-import { Input, Button } from "@material-ui/core";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../styles/maintabs.css";
 import "react-tabs/style/react-tabs.css";

@@ -1,6 +1,7 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import "../styles/listings.css";
+import { CenterFocusStrong } from "@material-ui/icons";
 
 class MyItems extends React.Component {
   constructor() {
@@ -29,17 +30,50 @@ class MyItems extends React.Component {
         style={{
           border: 0,
           background: "orange",
-          height: 1.5,
+          height: "1.5px",
           borderStyle: "inset",
         }}
       />
     );
 
+    function Type(props) {
+      const type = props.itemType;
+      if (type === "Request") {
+        return (
+          <Paper className="indicator">
+            <p
+              style={{
+                color: "red",
+                fontWeight: "bold",
+                fontSize: 12,
+              }}
+            >
+              Request
+            </p>
+          </Paper>
+        );
+      } else {
+        return (
+          <Paper className="indicator">
+            <p
+              style={{
+                color: "green",
+                fontWeight: "bold",
+                fontSize: 12,
+              }}
+            >
+              Offer
+            </p>
+          </Paper>
+        );
+      }
+    }
+
     return (
       <div>
         {this.state.myListings.map((myitem, i) => (
           <Paper key={i} className="paper">
-            <p>{myitem.type}</p>
+            <Type itemType={myitem.type} />
             <ColoredLine />
             <div className="div">
               <div className="first">
@@ -49,7 +83,7 @@ class MyItems extends React.Component {
               </div>
               <div className="second">
                 <button className="editDeleteButton">Edit</button>
-                <button className="editDeleteButton">Delete</button>
+                <button className="editDeleteButton bottom">Delete</button>
               </div>
             </div>
           </Paper>

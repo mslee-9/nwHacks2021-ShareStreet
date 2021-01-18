@@ -42,6 +42,10 @@
   background-color: #ecebeb;
 }
 
+.button:click {
+  background-color: #f7f7f7;
+}
+
 .offerButton {
   margin-right: 5px;
 }

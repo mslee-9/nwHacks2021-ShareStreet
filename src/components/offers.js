@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper } from "@material-ui/core/";
+import ItemDisplay from "./itemdisplay";
 
 class Offers extends React.Component {
   constructor() {
@@ -26,13 +26,18 @@ class Offers extends React.Component {
     return (
       <div>
         {this.state.offerListings.map((offer, i) => (
-          <Paper key={i}>
-            <p>{offer.organization}</p>
-            <p>{offer.item}</p>
-            <p>{offer.quantity}</p>
-          </Paper>
+          <ItemDisplay item={offer} key={i} />
         ))}
       </div>
+      // <div>
+      //   {this.state.offerListings.map((offer, i) => (
+      //     <Paper key={i}>
+      //       <p>{offer.organization}</p>
+      //       <p>{offer.item}</p>
+      //       <p>{offer.quantity}</p>
+      //     </Paper>
+      //   ))}
+      // </div>
     );
   }
 }
