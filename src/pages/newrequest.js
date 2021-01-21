@@ -15,7 +15,7 @@ class CreateNewRequest extends React.Component {
             <TabList>
               <Tab>Create New Request</Tab>
             </TabList>
-            <TabPanel className="background">
+            <TabPanel>
               <ItemInput />
             </TabPanel>
           </Tabs>

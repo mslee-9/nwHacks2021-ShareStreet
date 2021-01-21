@@ -10,53 +10,78 @@ class ItemInput extends React.Component {
     this.state = {
       organization: "",
       item: "",
+      description: "",
       quantity: 0,
     };
-    // this.handleChange = this.handleChange.bind(this);
-    // this.createListing = this.createListing.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.createListing = this.createListing.bind(this);
+  }
+
+  handleChange(e) {
+    const target = e.target;
+    const value = target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value,
+    });
   }
 
   createListing(e) {
-    // e.preventDefault();
-    // let tempListing = {
-    //   organization: this.state.organization,
-    //   item: this.state.organization,
-    //   quantity: this.state.quantity,
-    // };
-    // this.props.addListing(tempListing);
-    // this.setState({
-    //   organization: "",
-    //   item: "",
-    //   quantity: 0,
-    // });
+    e.preventDefault();
+    let tempListing = {
+      organization: this.state.organization,
+      item: this.state.item,
+      description: this.state.description,
+      quantity: this.state.quantity,
+    };
+    this.props.addListing(tempListing);
+    this.setState({
+      organization: "",
+      item: "",
+      quantity: 0,
+    });
   }
 
   render() {
     return (
-      <Grid container alignItems="center" justify="center" className="root">
+      <div className="background">
         <Paper className="paper" alignItems="center" justify="center">
           <form onSubmit={this.createListing}>
-            <Grid container direction="column">
-              <InputBase className="title" type="text" placeholder="Title" />
-              <InputBase
-                className="description"
-                type="text"
-                placeholder="Description"
-              />
-              <InputBase
-                className="quantity"
-                type="number"
-                placeholder="Quantity"
-              />
-              <Grid className="post-button-container">
-                <button type="submit" className="post">
-                  Post
-                </button>
-              </Grid>
+            {/* <Grid container direction="column"> */}
+            <InputBase
+              className="organization"
+              type="text"
+              placeholder="Organization"
+              onChange={this.handleChange}
+            />
+            <InputBase
+              className="item"
+              type="text"
+              placeholder="Item"
+              onChange={this.handleChange}
+            />
+            <InputBase
+              className="description"
+              type="text"
+              placeholder="Description"
+              onChange={this.handleChange}
+            />
+            <InputBase
+              className="quantity"
+              type="number"
+              placeholder="Quantity"
+              onChange={this.handleChange}
+            />
+            <Grid className="post-button-container">
+              <button type="submit" className="post">
+                Post
+              </button>
             </Grid>
+            {/* </Grid> */}
           </form>
         </Paper>
-      </Grid>
+      </div>
     );
   }
 }

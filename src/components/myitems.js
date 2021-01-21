@@ -1,6 +1,7 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import "../styles/listings.css";
+import { without } from "lodash";
 
 class MyItems extends React.Component {
   constructor() {
@@ -8,6 +9,16 @@ class MyItems extends React.Component {
     this.state = {
       myListings: [],
     };
+    this.deleteListing = this.deleteListing.bind(this);
+  }
+
+  deleteListing(item) {
+    let tempItems = this.state.myListings;
+    tempItems = without(tempItems, item);
+
+    this.setState({
+      myListings: tempItems,
+    });
   }
 
   componentDidMount() {
@@ -69,7 +80,7 @@ class MyItems extends React.Component {
     }
 
     return (
-      <div>
+      <div className="background">
         {this.state.myListings.map((myitem, i) => (
           <Paper key={i} className="paper">
             <Type itemType={myitem.type} />
@@ -82,7 +93,12 @@ class MyItems extends React.Component {
               </div>
               <div className="second">
                 <button className="editDeleteButton">Edit</button>
-                <button className="editDeleteButton bottom">Delete</button>
+                <button
+                  className="editDeleteButton bottom"
+                  onClick={() => this.deleteListing(myitem)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           </Paper>

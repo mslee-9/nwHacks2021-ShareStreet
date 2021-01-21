@@ -1,4 +1,6 @@
 .background {
+  padding-top: 5px;
+  padding-bottom: 10px;
   background: #f0f0f0;
-  padding: 1px;
+  height: 100%;
 }

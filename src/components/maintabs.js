@@ -15,13 +15,13 @@ class MainTabs extends React.Component {
           <Tab>Requests</Tab>
           <Tab style={{ float: "right" }}>My Dashboard</Tab>
         </TabList>
-        <TabPanel className="background">
+        <TabPanel>
           <Offers />
         </TabPanel>
-        <TabPanel className="background">
+        <TabPanel>
           <Requests />
         </TabPanel>
-        <TabPanel className="background">
+        <TabPanel>
           <MyItems />
         </TabPanel>
       </Tabs>

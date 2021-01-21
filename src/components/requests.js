@@ -24,7 +24,7 @@ class Requests extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="background">
         {this.state.requestListings.map((request, i) => (
           <ItemDisplay item={request} key={i} />
         ))}

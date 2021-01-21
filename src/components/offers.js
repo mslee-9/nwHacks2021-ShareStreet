@@ -24,7 +24,7 @@ class Offers extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="background">
         {this.state.offerListings.map((offer, i) => (
           <ItemDisplay item={offer} key={i} />
         ))}
