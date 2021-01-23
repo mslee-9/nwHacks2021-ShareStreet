@@ -5,15 +5,49 @@ import "react-tabs/style/react-tabs.css";
 import Offers from "./offers";
 import Requests from "./requests";
 import MyItems from "./myitems";
+import NewListing from "./newlisting";
 
 class MainTabs extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      myListings: [],
+      lastIndex: 0,
+    };
+    this.addListing = this.addListing.bind(this);
+  }
+
+  addListing(item) {
+    let tempListings = this.state.myListings;
+    item.listingId = this.state.lastIndex;
+    tempListings.unshift(item);
+    this.setState({
+      myListings: tempListings,
+      lastIndex: this.state.lastIndex + 1,
+    });
+  }
+
+  componentDidMount() {
+    fetch("./myitems.json")
+      .then((response) => response.json())
+      .then((result) => {
+        const myItems = result.map((item) => {
+          return item;
+        });
+        this.setState({
+          myListings: myItems,
+        });
+      });
+  }
+
   render() {
     return (
       <Tabs>
         <TabList>
           <Tab>Offers</Tab>
           <Tab>Requests</Tab>
-          <Tab style={{ float: "right" }}>My Dashboard</Tab>
+          <Tab>My Dashboard</Tab>
+          <Tab style={{ float: "right" }}>New Listing</Tab>
         </TabList>
         <TabPanel>
           <Offers />
@@ -22,7 +56,10 @@ class MainTabs extends React.Component {
           <Requests />
         </TabPanel>
         <TabPanel>
-          <MyItems />
+          <MyItems myItems={this.state.myListings} />
+        </TabPanel>
+        <TabPanel>
+          <NewListing addListing={this.addListing} />
         </TabPanel>
       </Tabs>
     );

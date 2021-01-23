@@ -22,26 +22,16 @@ class TopBar extends React.Component {
               src={logo}
             />
           </div>
-          <div className="buttons">
-            <div className="iconButtons">
-              <IconButton>
-                <InboxOutlined />
-              </IconButton>
-              <IconButton>
-                <MessageOutlined />
-              </IconButton>
-              <IconButton>
-                <NotificationsOutlined />
-              </IconButton>
-            </div>
-            <div className="mainButtons">
-              <button className="button offerButton" variant="outlined">
-                OFFER
-              </button>
-              <button className="button" onClick={this.newRequest}>
-                RECEIVE
-              </button>
-            </div>
+          <div className="iconButtons">
+            <IconButton>
+              <InboxOutlined />
+            </IconButton>
+            <IconButton>
+              <MessageOutlined />
+            </IconButton>
+            <IconButton>
+              <NotificationsOutlined />
+            </IconButton>
           </div>
         </div>
       </Navbar>

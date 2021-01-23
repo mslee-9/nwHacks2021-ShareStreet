@@ -1,32 +1,36 @@
 [
   {
-    "type": "Offer",
+    "type": "offer",
     "organization": "Org 1 offer",
     "item": "Item 1",
+    "description": "",
     "quantity": 1,
     "date": "2020-11-28",
     "location": "1243 Oak Street, Vancouver"
   },
   {
-    "type": "Offer",
+    "type": "offer",
     "organization": "Org 2 offer",
     "item": "Item 2",
+    "description": "",
     "quantity": 2,
     "date": "2020-11-28",
     "location": "1243 Oak Street, Vancouver"
   },
   {
-    "type": "Offer",
+    "type": "offer",
     "organization": "Org 3 offer",
     "item": "Item 3",
+    "description": "",
     "quantity": 3,
     "date": "2020-11-28",
     "location": "1243 Oak Street, Vancouver"
   },
   {
-    "type": "Offer",
+    "type": "offer",
     "organization": "Org 4 offer",
     "item": "Item 4",
+    "description": "",
     "quantity": 4,
     "date": "2020-11-28",
     "location": "1243 Oak Street, Vancouver"

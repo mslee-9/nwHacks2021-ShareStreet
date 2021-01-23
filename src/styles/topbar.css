@@ -28,29 +28,3 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
-
-.button {
-  height: 37px;
-  width: 76px;
-  border-color: orange;
-  background-color: #f7f7f7;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-.button:hover {
-  background-color: #ecebeb;
-}
-
-.button:click {
-  background-color: #f7f7f7;
-}
-
-.offerButton {
-  margin-right: 5px;
-}
-
-.backButton {
-  right: 30px;
-  top: 25px;
-}

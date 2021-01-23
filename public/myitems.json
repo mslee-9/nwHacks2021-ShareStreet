@@ -1,24 +1,24 @@
 [
   {
-    "type": "Request",
+    "type": "request",
     "item": "Item 1",
     "description": "description 1",
     "quantity": 1
   },
   {
-    "type": "Offer",
+    "type": "offer",
     "item": "Item 2",
     "description": "description 2",
     "quantity": 2
   },
   {
-    "type": "Offer",
+    "type": "offer",
     "item": "Item 3",
     "description": "description 3",
     "quantity": 3
   },
   {
-    "type": "Request",
+    "type": "request",
     "item": "Item 4",
     "description": "description 4",
     "quantity": 4

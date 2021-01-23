@@ -27,38 +27,23 @@
   background: #e6e6e6;
 }
 
-.post-button-container {
-  margin-top: 10px;
-  align-self: center;
-}
-.description {
-  height: 100px;
-  width: 100%;
-  align-self: top;
-  background: #fafafa;
-  margin-right: 10px;
-  margin-top: 5px;
-  text-align: top;
-  padding: 10px;
+.post:focus {
+  background: #d8d8d8;
+  border-color: rgb(226, 226, 226);
 }
 
-.quantity {
-  width: 100%;
-  height: 40px;
-  align-self: top;
+.input,
+.input-description {
+  border-width: 0px;
+  border-radius: 5px;
+  width: 91vh;
   background: #fafafa;
-  margin-right: 10px;
-  margin-top: 5px;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
-.item,
-.organization {
-  width: 100%;
-  height: 40px;
-  background: #fafafa;
-  margin-top: 5px;
-  padding: 10px;
+.input-description {
+  height: 10vh;
 }
 
 .fileLabel {

@@ -21,20 +21,9 @@ class MyItems extends React.Component {
     });
   }
 
-  componentDidMount() {
-    fetch("./myitems.json")
-      .then((response) => response.json())
-      .then((result) => {
-        const myitems = result.map((myitem) => {
-          return myitem;
-        });
-        this.setState({
-          myListings: myitems,
-        });
-      });
-  }
-
   render() {
+    const myListing = this.props.myItems;
+
     const ColoredLine = () => (
       <hr
         style={{
@@ -48,7 +37,7 @@ class MyItems extends React.Component {
 
     function Type(props) {
       const type = props.itemType;
-      if (type === "Request") {
+      if (type === "request") {
         return (
           <Paper className="indicator">
             <p
@@ -81,7 +70,7 @@ class MyItems extends React.Component {
 
     return (
       <div className="background">
-        {this.state.myListings.map((myitem, i) => (
+        {myListing.map((myitem, i) => (
           <Paper key={i} className="paper">
             <Type itemType={myitem.type} />
             <ColoredLine />
