@@ -1,7 +1,6 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import "../styles/listings.css";
-import { without } from "lodash";
 
 class MyItems extends React.Component {
   constructor() {

@@ -9,8 +9,9 @@
   width: 100%;
 }
 
-.firstText {
-  margin-top: 10px;
+.firstText,
+.secondText {
+  margin: 0px;
 }
 
 .secondBlock {
@@ -30,7 +31,7 @@
   float: right;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .organizationName {
