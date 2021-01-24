@@ -13,12 +13,7 @@ class MyItems extends React.Component {
   }
 
   deleteListing(item) {
-    let tempItems = this.state.myListings;
-    tempItems = without(tempItems, item);
-
-    this.setState({
-      myListings: tempItems,
-    });
+    this.props.deleteListing(item);
   }
 
   render() {
@@ -39,31 +34,27 @@ class MyItems extends React.Component {
       const type = props.itemType;
       if (type === "request") {
         return (
-          <Paper className="indicator">
-            <p
-              style={{
-                color: "red",
-                fontWeight: "bold",
-                fontSize: 12,
-              }}
-            >
-              Request
-            </p>
-          </Paper>
+          <p
+            style={{
+              color: "red",
+              fontWeight: "bold",
+              fontSize: 12,
+            }}
+          >
+            Request
+          </p>
         );
       } else {
         return (
-          <Paper className="indicator">
-            <p
-              style={{
-                color: "green",
-                fontWeight: "bold",
-                fontSize: 12,
-              }}
-            >
-              Offer
-            </p>
-          </Paper>
+          <p
+            style={{
+              color: "green",
+              fontWeight: "bold",
+              fontSize: 12,
+            }}
+          >
+            Offer
+          </p>
         );
       }
     }

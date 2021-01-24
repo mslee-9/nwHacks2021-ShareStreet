@@ -1,8 +1,7 @@
 import React from "react";
-import "react-tabs/style/react-tabs.css";
+import Paper from "@material-ui/core/Paper";
 import "../styles/newlisting.css";
 import "../styles/maintabs.css";
-import Paper from "@material-ui/core/Paper";
 import "../styles/inputform.css";
 
 class CreateNewListing extends React.Component {

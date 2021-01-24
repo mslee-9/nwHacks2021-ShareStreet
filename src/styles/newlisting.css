@@ -8,9 +8,6 @@
   left: 30;
 }
 
-.main {
-}
-
 .homeButton {
   position: absolute;
   right: 50px;
@@ -18,4 +15,16 @@
   color: black;
   border: 2px solid orange;
   background: #f7f7f7;
+}
+
+.buttonCall {
+  background: orange;
+  border-radius: 5px;
+  border-width: 0px;
+  height: 25px;
+  width: 65px;
+}
+
+.buttonCall:hover {
+  opacity: 60%;
 }

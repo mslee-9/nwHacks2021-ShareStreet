@@ -1,6 +1,3 @@
-.root {
-  justify-items: center;
-}
 .paper {
   margin: auto;
   margin-top: 10px;
@@ -8,20 +5,39 @@
   min-height: 170px;
 }
 
-.div {
+.firstBlock {
   width: 100%;
 }
 
-.first {
-  width: 60%;
-  float: left;
+.firstText {
+  margin-top: 10px;
 }
 
-.second {
-  float: right;
+.secondBlock {
+  height: 130px;
+  width: 400px;
+  float: left;
   display: flex;
   flex-direction: column;
-  margin-top: 75px;
+  font-size: 14px;
+  justify-content: space-around;
+}
+
+.thirdBlock {
+  height: 130px;
+  width: 200px;
+  display: flex;
+  float: right;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+
+.organizationName {
+  margin: 0px;
+  color: rgb(110, 110, 110);
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .request {
@@ -41,8 +57,15 @@
 }
 
 .indicator {
+  background: rgb(110, 110, 110);
   width: 60px;
   height: 15px;
   justify-content: center;
   align-items: center;
+}
+
+.buttonOption {
+  position: relative;
+  bottom: 10;
+  margin-top: 100px;
 }

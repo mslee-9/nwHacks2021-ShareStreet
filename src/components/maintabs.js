@@ -6,6 +6,7 @@ import Offers from "./offers";
 import Requests from "./requests";
 import MyItems from "./myitems";
 import NewListing from "./newlisting";
+import { without } from "lodash";
 
 class MainTabs extends React.Component {
   constructor() {
@@ -15,6 +16,16 @@ class MainTabs extends React.Component {
       lastIndex: 0,
     };
     this.addListing = this.addListing.bind(this);
+    this.deleteListing = this.deleteListing.bind(this);
+  }
+
+  deleteListing(item) {
+    let tempItems = this.state.myListings;
+    tempItems = without(tempItems, item);
+
+    this.setState({
+      myListings: tempItems,
+    });
   }
 
   addListing(item) {
@@ -56,7 +67,10 @@ class MainTabs extends React.Component {
           <Requests />
         </TabPanel>
         <TabPanel>
-          <MyItems myItems={this.state.myListings} />
+          <MyItems
+            myItems={this.state.myListings}
+            deleteListing={this.deleteListing}
+          />
         </TabPanel>
         <TabPanel>
           <NewListing addListing={this.addListing} />
